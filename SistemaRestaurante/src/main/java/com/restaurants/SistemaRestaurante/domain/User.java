@@ -14,7 +14,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "users")
 public class User {
 
-    private int id;
     private String email;
     private String nome;
 

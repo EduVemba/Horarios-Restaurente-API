@@ -6,7 +6,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -21,7 +20,12 @@ public class RestauranteConfig {
                     "loxour@gmail.com",
                     LocalTime.of(20,0)
             );
-            restauranteRepository.saveAll(List.of(horario1));
+            Restaurante horario2 = new Restaurante(
+                    "Looxour",
+                    "loxour@gmail.com",
+                    LocalTime.of(23,30)
+            );
+            restauranteRepository.saveAll(List.of(horario1,horario2));
         };
     }
 }
