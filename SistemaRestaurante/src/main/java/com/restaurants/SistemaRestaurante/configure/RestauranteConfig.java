@@ -18,12 +18,16 @@ public class RestauranteConfig {
             Restaurante horario1 = new Restaurante(
                     "Looxour",
                     "loxour@gmail.com",
-                    LocalTime.of(20,0)
+                    LocalTime.of(20,0),
+                    LocalTime.of(22,0),
+                    4
             );
             Restaurante horario2 = new Restaurante(
                     "Looxour",
                     "loxour@gmail.com",
-                    LocalTime.of(23,30)
+                    LocalTime.of(22,30),
+                    LocalTime.of(0,30),
+                    4
             );
             restauranteRepository.saveAll(List.of(horario1,horario2));
         };

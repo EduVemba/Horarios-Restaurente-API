@@ -19,6 +19,8 @@ public class Restaurante {
 
     private String nome;
     private String email;
-    private LocalTime horario;
+    private LocalTime horarioAbertura;
+    private LocalTime horarioFechamento;
+    private int capacidadeMaxima;
 
 }
