@@ -23,6 +23,12 @@ public class User implements UserDetails {
     private String nome;
     private Roles role;
 
+    public User (String email, String password, String nome) {
+        this.email = email;
+        this.password = password;
+        this.nome = nome;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return role.getAuthorities();
